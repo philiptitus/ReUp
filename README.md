@@ -51,8 +51,9 @@
    ```
 
 ### Backend Access
+This App is powered by the SQUARE API, a django server.
 
-The backend source code can be accessed here: [Backend Source Code](https://mrphilip.pythonanywhere.com/portfolio/reup).  
+The backend source code can be accessed here: [Backend Source Code](https://github.com/philiptitus/squareapi.git).  
 API documentation can be found here: [API Docs on Postman](https://www.postman.com/philiptitus/workspace/projects/collection/31401198-24092ff6-5b04-4aee-a231-819db5b48358?action=share&creator=31401198).
 
 ---
