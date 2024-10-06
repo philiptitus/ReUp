@@ -1,164 +1,103 @@
-# Welcome to your new ignited app!
+# REUP - Waste Management & Community Engagement App
 
 [![CircleCI](https://circleci.com/gh/infinitered/ignite.svg?style=svg)](https://circleci.com/gh/infinitered/ignite)
 
-## The latest and greatest boilerplate for Infinite Red opinions
+## Revolutionizing Waste Management with AI and Social Engagement
 
-This is the boilerplate that [Infinite Red](https://infinite.red) uses as a way to test bleeding-edge changes to our React Native stack.
+**REUP** is a cutting-edge mobile application designed to transform how waste is managed, making it easier for individuals and communities to locate trash collection points, dispose of waste properly, and engage in environmental conversations. The app integrates Google Maps API for navigation and Google Gemini AI for intelligent waste disposal instructions.
 
-Currently includes:
+---
 
-- React Native
-- React Navigation
-- MobX State Tree
-- TypeScript
-- And more!
+### Key Features:
 
-## Quick Start
+- **Locate Trash Collection Points**: Use Google Maps to find nearby trash collection points and view the types of waste accepted at each location.
+- **Smart Disposal Instructions**: Snap a picture of your waste, and the AI will guide you with specific instructions on how to dispose of it properly.
+- **Points and Rewards**: Earn points for each waste disposal and cash out rewards for eco-friendly actions.
+- **Admin Features**: As an admin, you can easily add new collection sites, update accepted waste types, and track site usage.
+- **Community Engagement**: Connect with others through a social platform similar to Instagram. Share ideas, discuss environmental issues, and engage in community-driven initiatives.
+- **Leaderboards**: Climb the leaderboards by earning points for waste disposal and community engagement.
 
-The Ignite boilerplate project's structure will look similar to this:
+---
 
-```
-ignite-project
-├── app
-│   ├── components
-│   ├── config
-│   ├── i18n
-│   ├── models
-│   ├── navigators
-│   ├── screens
-│   ├── services
-│   ├── theme
-│   ├── utils
-│   └── app.tsx
-├── assets
-│   ├── icons
-│   └── images
-├── test
-│   ├── __snapshots__
-│   ├── mockFile.ts
-│   └── setup.ts
-├── README.md
-├── android
-│   ├── app
-│   ├── build.gradle
-│   ├── gradle
-│   ├── gradle.properties
-│   ├── gradlew
-│   ├── gradlew.bat
-│   ├── keystores
-│   └── settings.gradle
-├── ignite
-│   └── templates
-|       |── app-icon
-│       ├── component
-│       ├── model
-│       ├── navigator
-│       └── screen
-├── index.js
-├── ios
-│   ├── IgniteProject
-│   ├── IgniteProject-tvOS
-│   ├── IgniteProject-tvOSTests
-│   ├── IgniteProject.xcodeproj
-│   └── IgniteProjectTests
-├── .env
-└── package.json
+## Getting Started
 
-```
+### Prerequisites:
 
-### ./app directory
+- **React Native**: This project is built using React Native. Make sure you have it installed.
+- **Google Maps API**: You will need API keys to enable the navigation and collection point features.
+- **Gemini AI Integration**: Ensure you have access to Google Gemini AI for the intelligent waste disposal feature.
 
-Included in an Ignite boilerplate project is the `app` directory. This is a directory you would normally have to create when using vanilla React Native.
+### How to Run the Project:
 
-The inside of the `app` directory looks similar to the following:
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/philiptitus/ReUp.git
+   ```
 
-```
-app
-├── components
-├── config
-├── i18n
-├── models
-├── navigators
-├── screens
-├── services
-├── theme
-├── utils
-└── app.tsx
-```
+2. **Install dependencies:**
+   ```
+   cd ReUp
+   npm install
+   ```
 
-**components**
-This is where your reusable components live which help you build your screens.
+3. **Configure your environment:**
+   - Add your **Google Maps API Key** to the `.env` file.
+   - Set up **Google Gemini AI** credentials.
 
-**i18n**
-This is where your translations will live if you are using `react-native-i18n`.
+4. **Start the development server:**
+   ```
+   npx react-native run-android   // For Android
+   npx react-native run-ios       // For iOS
+   ```
 
-**models**
-This is where your app's models will live. Each model has a directory which will contain the `mobx-state-tree` model file, test file, and any other supporting files like actions, types, etc.
+### Backend Access
 
-**navigators**
-This is where your `react-navigation` navigators will live.
+The backend source code can be accessed here: [Backend Source Code](https://mrphilip.pythonanywhere.com/portfolio/reup).  
+API documentation can be found here: [API Docs on Postman](https://www.postman.com/philiptitus/workspace/projects/collection/31401198-24092ff6-5b04-4aee-a231-819db5b48358?action=share&creator=31401198).
 
-**screens**
-This is where your screen components will live. A screen is a React component which will take up the entire screen and be part of the navigation hierarchy. Each screen will have a directory containing the `.tsx` file, along with any assets or other helper files.
+---
 
-**services**
-Any services that interface with the outside world will live here (think REST APIs, Push Notifications, etc.).
+## Contribution Guidelines
 
-**theme**
-Here lives the theme for your application, including spacing, colors, and typography.
+We welcome contributions from developers passionate about improving waste management and community engagement!
 
-**utils**
-This is a great place to put miscellaneous helpers and utilities. Things like date helpers, formatters, etc. are often found here. However, it should only be used for things that are truly shared across your application. If a helper or utility is only used by a specific component or model, consider co-locating your helper with that component or model.
+1. **Fork the repository**:  
+   Go to [REUP GitHub Repo](https://github.com/philiptitus/ReUp.git), and fork the repository.
 
-**app.tsx** This is the entry point to your app. This is where you will find the main App component which renders the rest of the application.
+2. **Create your feature branch**:  
+   ```
+   git checkout -b feature/AmazingFeature
+   ```
 
-### ./assets directory
+3. **Commit your changes**:  
+   ```
+   git commit -m 'Add some AmazingFeature'
+   ```
 
-This directory is designed to organize and store various assets, making it easy for you to manage and use them in your application. The assets are further categorized into subdirectories, including `icons` and `images`:
+4. **Push to the branch**:  
+   ```
+   git push origin feature/AmazingFeature
+   ```
 
-```
-assets
-├── icons
-└── images
-```
+5. **Open a pull request**:  
+   Submit your pull request for review, and include a detailed explanation of the changes.
 
-**icons**
-This is where your icon assets will live. These icons can be used for buttons, navigation elements, or any other UI components. The recommended format for icons is PNG, but other formats can be used as well.
+---
 
-Ignite comes with a built-in `Icon` component. You can find detailed usage instructions in the [docs](https://github.com/infinitered/ignite/blob/master/docs/Components-Icon.md).
+## Support and Contact
 
-**images**
-This is where your images will live, such as background images, logos, or any other graphics. You can use various formats such as PNG, JPEG, or GIF for your images.
+For any issues or questions, feel free to reach out through [Contact Page](https://mrphilip.pythonanywhere.com/contact/).
 
-Another valuable built-in component within Ignite is the `AutoImage` component. You can find detailed usage instructions in the [docs](https://github.com/infinitered/ignite/blob/master/docs/Components-AutoImage.md).
+---
 
-How to use your `icon` or `image` assets:
+### Credit
 
-```
-import { Image } from 'react-native';
+This project was initially developed using the **Ignite** React Native template by [Infinite Red](https://infinite.red). Special thanks to the open-source community for the tools and inspiration!
 
-const MyComponent = () => {
-  return (
-    <Image source={require('../assets/images/my_image.png')} />
-  );
-};
-```
+---
 
-### ./ignite directory
+## License
 
-The `ignite` directory stores all things Ignite, including CLI and boilerplate items. Here you will find templates you can customize to help you get started with React Native.
+This project is licensed under the **MIT License**.  
+© 2024 Philip Titus
 
-### ./test directory
-
-This directory will hold your Jest configs and mocks.
-
-## Running Maestro end-to-end tests
-
-Follow our [Maestro Setup](https://ignitecookbook.com/docs/recipes/MaestroSetup) recipe from the [Ignite Cookbook](https://ignitecookbook.com/)!
-
-## Previous Boilerplates
-
-- [2018 aka Bowser](https://github.com/infinitered/ignite-bowser)
-- [2017 aka Andross](https://github.com/infinitered/ignite-andross)
-- [2016 aka Ignite 1.0](https://github.com/infinitered/ignite-ir-boilerplate-2016)
