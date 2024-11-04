@@ -1,9 +1,9 @@
 {
-  "name": "KiliEcoSpot",
-  "displayName": "KiliEcoSpot",
+  "name": "ReUp",
+  "displayName": "ReUp",
   "owner": "philiptitus",
   "expo": {
-    "name": "KiliEcoSpot",
+    "name": "ReUp",
     "slug": "re-Up",
     "scheme": "reup",
     "version": "1.0.0",

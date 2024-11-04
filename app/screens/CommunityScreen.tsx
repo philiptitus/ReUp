@@ -9,7 +9,6 @@ import CommunityDetail from './DemoShowroomScreen/components/CommunityDetail';
 import Community from './DemoShowroomScreen/components/Community';
 import CreateReport from './DemoShowroomScreen/components/CreateReport';
 import { useDispatch, useSelector } from 'react-redux';
-import Contributions from './DemoShowroomScreen/components/Contributions';
 
 
 const CommunityScreen = () => {
@@ -51,9 +50,7 @@ const CommunityScreen = () => {
             <Text style={styles.drawerItem}>Community Social Feed</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity onPress={() => handleNavigation('Contributions')}>
-            <Text style={styles.drawerItem}>Contributions</Text>
-          </TouchableOpacity>
+
           
 
          
@@ -75,7 +72,6 @@ const CommunityScreen = () => {
         <ScrollView>
         {currentView === 'Community' && <Community/>}
 
-        {currentView === 'Contributions' && <Contributions/>}
 
 
 

@@ -69,7 +69,7 @@ export const DemoDebugScreen: FC<DemoTabScreenProps<"DemoDebug">> = function Dem
           LeftComponent={
             <View style={$item}>
               <Text preset="bold">App Name</Text>
-              <Text>KiliEcoSpot (stable)</Text>
+              <Text>ReUp (stable)</Text>
             </View>
           }
         />

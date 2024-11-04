@@ -104,7 +104,7 @@ const CameraComponent = () => {
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
-    bottom: 110,
+    bottom: 230,
     right: 15,
   },
   iconContainer: {

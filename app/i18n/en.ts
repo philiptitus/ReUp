@@ -98,7 +98,7 @@ editProfile: {
     componentsTab: "Community",
     debugTab: "Account",
     communityTab: "Data",
-    podcastListTab: "KiliEcoSpot",
+    podcastListTab: "ReUp",
   },
   demoCommunityScreen: {
     title: "Connect with the community",

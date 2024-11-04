@@ -38,7 +38,7 @@ const CommunityDetail = () => {
   const { loading: deleteLoading, error: deleteError, success: deleteSuccess } = deleteAdminAreaState;
 
   useEffect(() => {
-    dispatch(getUserDetails(userInfo.id));
+    dispatch(getUserDetails(userInfo?.id));
   }, [dispatch, userInfo]);
 
   useEffect(() => {

@@ -28,12 +28,12 @@ const SplashScreen = () => {
     <View style={styles.container}>
       <Animated.View style={{ transform: [{ scale: scaleValue }], flex: 1 }}>
         <ImageBackground
-          source={require('../../assets/images/kill.jpg')}
+          source={require('../../assets/images/main.jpg')}
           style={styles.image}
           resizeMode="contain"
         >
           <View style={styles.overlay}>
-            <Text style={styles.title}>For A Cleaner Kilimani</Text>
+            <Text style={styles.title}>Making The World A Cleaner Place😊🌍</Text>
           </View>
         </ImageBackground>
       </Animated.View>

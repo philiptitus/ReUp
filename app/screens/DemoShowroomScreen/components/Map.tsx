@@ -482,7 +482,7 @@ const MapViewComponent = () => {
       <Notification />
       <MarkerInfo/>
       <Tip/>
-      {/* <CameraComponent style={styles.cameraComponent} /> */}
+      <CameraComponent style={styles.cameraComponent} />
       <TouchableOpacity style={{    position: 'absolute',
     bottom: 10,
     right: 20,
