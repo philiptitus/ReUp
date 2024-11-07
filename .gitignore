@@ -127,3 +127,11 @@ yarn-error.*
 *.tsbuildinfo
 
 # @end expo-cli
+
+
+
+# Ignore virtual environments
+venv/
+ENV/
+env/
+.venv/

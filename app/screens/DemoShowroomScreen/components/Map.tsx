@@ -105,60 +105,7 @@ const MapViewComponent = () => {
   };
   
 
-  // const getClosestPoint = (currentLocation, points) => {
-  //   console.log("Function called with currentLocation:", currentLocation);
-  //   console.log("Points:", points);
-  
-  //   if (!currentLocation || points.length === 0) {
-  //     console.log("Invalid input: currentLocation or points are missing.");
-  //     return null;
-  //   }
-  
-  //   let closestPoint = null;
-  //   let minDistance = Infinity;
-  
-  //   points.forEach(point => {
-  //     const distance = Math.sqrt(
-  //       Math.pow(currentLocation.latitude - point.coordinates.latitude, 2) +
-  //       Math.pow(currentLocation.longitude - point.coordinates.longitude, 2)
-  //     );
-  //     if (distance < minDistance) {
-  //       closestPoint = point;
-  //       minDistance = distance;
-  //     }
-  //   });
-  
-  //   console.log("Closest point found:", closestPoint);
-  //   if (closestPoint) {
-  //     console.log("Closest point name (ID):", closestPoint.name);
-  //   }
-  //   return closestPoint;
-  // };
 
-
-  // const requestLocationPermission = async () => {
-  //   if (Platform.OS === 'android') {
-  //     try {
-  //       const granted = await PermissionsAndroid.request(
-  //         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-  //         {
-  //           title: 'Location Permission',
-  //           message: 'This app needs access to your location to show your current position.',
-  //           buttonNeutral: 'Ask Me Later',
-  //           buttonNegative: 'Cancel',
-  //           buttonPositive: 'OK',
-  //         }
-  //       );
-  //       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-  //         console.log('You can use the location');
-  //       } else {
-  //         console.error('Location permission denied');
-  //       }
-  //     } catch (err) {
-  //       console.warn(err);
-  //     }
-  //   }
-  // };
   
 
   useEffect(() => {
@@ -510,7 +457,7 @@ const MapViewComponent = () => {
   onDelete={handleDeleteMarker}
   markerName={
     selectedMarker 
-      ? (selectedMarker.types === 'General' ? 'BRB Waste Collection Zone' : 'BYG Waste Collection Zone')
+      ? (selectedMarker.types + " collection point")
       : ''
   }
 />
